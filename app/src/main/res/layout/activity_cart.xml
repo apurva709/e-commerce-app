@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:id="@+id/relative_cart"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/total_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:height="50dp"
+            android:background="@drawable/buttons"
+            android:gravity="center_horizontal"
+            android:text="Total"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_cart"
+        android:layout_below="@+id/relative_cart"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/next_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttons"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+    android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:text="Your order has been placed successfully soon you will receive your order"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:id="@+id/msg_1"
+        />
+</RelativeLayout>

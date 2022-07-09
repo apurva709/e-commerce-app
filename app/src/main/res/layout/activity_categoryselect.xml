@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categoryselect">
+
+    <TextView
+        android:id="@+id/slogan_category_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Select your Vehicle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category_user"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/splendor_user"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/splendor" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/activa_user"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/activa" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layout_user"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/luna_user"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            android:paddingLeft="10dp"
+            app:srcCompat="@drawable/luna" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/passion_user"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/passion" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3_category_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear2_category_layout_user">
+        <com.rey.material.widget.ImageView
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            android:paddingLeft="30dp"
+            app:srcCompat="@drawable/ricksaw"
+            android:id="@+id/ricksawuser"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

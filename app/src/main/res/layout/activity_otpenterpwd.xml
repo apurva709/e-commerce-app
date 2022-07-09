@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otpenter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/otpimage1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/a"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otp Verification"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/jay"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="we will send you Otp very soon"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="to Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:background="@drawable/backgroundbox"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/inputmob1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:text="1234567890"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getOTP"
+                android:id="@+id/buttongetotp1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:background="@drawable/buttons"/>
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/progressbar1"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/bypasso1"
+            android:layout_width="193dp"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttons"
+            android:text="Bypass"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

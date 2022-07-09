@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Confirmation">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shipment Details"
+        android:textSize="18dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_margin="25dp"
+        android:id="@+id/cnfm_title"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnfm_title"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/cnfm_name"
+        android:textColor="@color/black"
+        android:hint="Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnfm_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/cnfm_phn"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnfm_phn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/cnfm_address"
+        android:hint="Address"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnfm_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/cnfm_city"
+        android:hint="City Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnfm_city"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/cnfm_pin"
+        android:hint="Pincode"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/cnfm_city" />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="15dp"
+    android:text="Confirm"
+    android:id="@+id/cnfm_btn"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:background="@drawable/buttons"/>
+
+</RelativeLayout>

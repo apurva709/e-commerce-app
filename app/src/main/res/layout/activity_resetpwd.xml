@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resetpwd">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:hint="phone"
+        android:textSize="30sp"
+        android:id="@+id/phonereset"
+        />
+
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonereset"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="new password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:hint="confirm password"
+        android:layout_below="@+id/newpass"
+        android:id="@+id/newcnfpass"
+        />
+
+    <CheckBox
+        android:id="@+id/chkbk"
+        android:layout_width="188dp"
+        android:layout_height="159dp"
+        android:layout_below="@+id/newcnfpass"
+        android:layout_marginTop="-20dp"
+        android:gravity="center"
+        android:text="Show password" />
+
+    <Button
+        android:id="@+id/rst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkbk"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-41dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttons"
+        android:text="continue"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

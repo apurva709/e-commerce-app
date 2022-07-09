@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/splendor"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/splendor" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/activa"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/activa" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_category_layout"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/luna"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            android:paddingLeft="10dp"
+            app:srcCompat="@drawable/luna" />
+
+        <com.rey.material.widget.ImageView
+            android:id="@+id/passion"
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/passion" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear2_category_layout">
+        <com.rey.material.widget.ImageView
+            android:layout_width="216dp"
+            android:layout_height="140dp"
+            android:paddingLeft="30dp"
+            app:srcCompat="@drawable/ricksaw"
+            android:id="@+id/ricksaw"
+            />
+
+
+
+
+    </LinearLayout>
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adminlogout"
+      android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttons"
+        android:id="@+id/checkorder"
+        android:text="Check New order "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttons"
+        android:id="@+id/adminlogout"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>
